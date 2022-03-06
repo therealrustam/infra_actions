@@ -74,6 +74,6 @@ jobs:
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull therealrustam/infra
-          #остановка всех контейнеров
+          #остановка всех контейнеро
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 therealrustam/infra
